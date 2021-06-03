@@ -92,13 +92,13 @@
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
-                        <li class="splide__slide"><img src="https://placeimg.com/640/480/any" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-1.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-2.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-3.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-4.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-5.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-6.jpg') }}" alt=""></li>
+                        <li class="splide__slide"><img class="object-cover object-center h-full w-full" src="{{ asset('img/slider-7.jpg') }}" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -190,15 +190,15 @@
 
 @section('js')
     @parent
-{{--    <script type="text/javascript">--}}
-{{--        new Splide('.splide', {--}}
-{{--            type: 'fade',--}}
-{{--            rewind: true,--}}
-{{--        }).mount();--}}
-{{--    </script>--}}
-    <script>
-        new Splide( '.splide' ).mount();
+    <script type="text/javascript">
+        new Splide('.splide', {
+            type: 'fade',
+            rewind: true,
+        }).mount();
     </script>
+{{--    <script>--}}
+{{--        new Splide( '.splide' ).mount();--}}
+{{--    </script>--}}
     <script src="{{ mix('js/bg-header.js') }}"></script>
     <script src="{{ mix('js/navbar_desktop.js') }}"></script>
     <script src="{{ mix('js/section_menu.js') }}"></script>
