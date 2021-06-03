@@ -1,0 +1,65 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.bg-header, .img_header {
+    height: 90vh;
+}
+
+.img_header {
+    transition: all ease 1.3s;
+}
+
+.bg-gray-500 {
+    background-color: #eeeeee;
+}
+
+.bg-yellow-500 {
+    background-color: #eec12a;
+}
+
+#navbar_desktop {
+    transition: all ease 0.7s;
+}
+
+.bg-footer {
+    background-color: #242424;
+}
+
+.menu_bg {
+    height: 1250px;
+}
+@media (min-width: 1024px) {
+    .menu_bg {
+        height: 980px;
+    }
+}
+
+.booking > img {
+    transition: all ease 0.3s;
+}
+
+.booking:hover > img {
+    filter: brightness(50%);
+}
+
+.booking > p {
+    transition: all ease 0.3s;
+    opacity: 0;
+}
+
+.booking:hover > p {
+    opacity: 100;
+}
+
+.error {
+    @apply text-red-500
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
